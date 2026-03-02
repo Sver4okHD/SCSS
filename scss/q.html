@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Турфирма · Лендинг</title>
+    <!-- Подключается только готовый CSS (скомпилирован из SCSS) -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- ХЕДЕР (секция 1) -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="header__logo">🌴 счастливого_Путешествия</a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a href="#tours">Туры</a></li>
+                    <li><a href="#advantages">Преимущества</a></li>
+                    <li><a href="#conditions">Условия</a></li>
+                    <li><a href="#form">Подбор</a></li>
+                </ul>
+            </nav>
+            <button class="header__mobile-btn" aria-label="меню">☰</button>
+        </div>
+    </header>
+
+    <!-- MAINSCREEN (секция 2) -->
+    <section class="mainscreen">
+        <div class="container mainscreen__container">
+            <h1 class="mainscreen__title">Путешествия, которые запомнятся</h1>
+            <p class="mainscreen__subtitle">Индивидуальные туры, горящие предложения, раннее бронирование</p>
+            <a href="#form" class="btn btn--primary btn--large">Подобрать тур</a>
+        </div>
+    </section>
+
+    <!-- КАРТОЧКИ ТУРОВ (секция 3) -->
+    <section id="tours" class="tours section">
+        <div class="container">
+            <h2 class="section-title">Популярные направления</h2>
+            <div class="tours__grid">
+                <!-- карточка 1 -->
+                <div class="tour-card">
+                    <div class="tour-card__image" style="background: #4a90e2;">🏝️</div>
+                    <h3 class="tour-card__title">Мальдивы</h3>
+                    <p class="tour-card__desc">7 ночей, всё включено, перелёт</p>
+                    <div class="tour-card__price">от 145 000 ₽</div>
+                    <button class="btn btn--small">Хочу</button>
+                </div>
+                <!-- карточка 2 -->
+                <div class="tour-card">
+                    <div class="tour-card__image" style="background: #e67e22;">🏔️</div>
+                    <h3 class="tour-card__title">Алтай</h3>
+                    <p class="tour-card__desc">10 дней, тур на джипах, проживание</p>
+                    <div class="tour-card__price">от 89 000 ₽</div>
+                    <button class="btn btn--small">Хочу</button>
+                </div>
+                <!-- карточка 3 -->
+                <div class="tour-card">
+                    <div class="tour-card__image" style="background: #2ecc71;">🏯</div>
+                    <h3 class="tour-card__title">Япония</h3>
+                    <p class="tour-card__desc">Токио–Киото, 8 дней, гид</p>
+                    <div class="tour-card__price">от 210 000 ₽</div>
+                    <button class="btn btn--small">Хочу</button>
+                </div>
+                <!-- карточка 4 (доп) -->
+                <div class="tour-card">
+                    <div class="tour-card__image" style="background: #9b59b6;">🏖️</div>
+                    <h3 class="tour-card__title">Турция</h3>
+                    <p class="tour-card__desc">5 звёзд, ультра всё включено</p>
+                    <div class="tour-card__price">от 120 000 ₽</div>
+                    <button class="btn btn--small">Хочу</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРЕИМУЩЕСТВА (секция 4) -->
+    <section id="advantages" class="advantages section">
+        <div class="container">
+            <h2 class="section-title">Почему выбирают нас</h2>
+            <div class="advantages__flex">
+                <div class="advantage-item">
+                    <span class="advantage-item__icon">✈️</span>
+                    <h3>Индивидуальный подход</h3>
+                    <p>Составим маршрут под ваши желания</p>
+                </div>
+                <div class="advantage-item">
+                    <span class="advantage-item__icon">🏨</span>
+                    <h3>Отели 5★</h3>
+                    <p>Только проверенные партнёры</p>
+                </div>
+                <div class="advantage-item">
+                    <span class="advantage-item__icon">🛡️</span>
+                    <h3>Поддержка 24/7</h3>
+                    <p>Поможем в любой точке мира</p>
+                </div>
+                <div class="advantage-item">
+                    <span class="advantage-item__icon">💰</span>
+                    <h3>Лучшая цена</h3>
+                    <p>Гарантия низкой стоимости</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- УСЛОВИЯ / КАК МЫ РАБОТАЕМ (секция 5) -->
+    <section id="conditions" class="conditions section">
+        <div class="container">
+            <h2 class="section-title">Как забронировать тур</h2>
+            <div class="conditions__steps">
+                <div class="step">
+                    <span class="step__number">1</span>
+                    <h4>Заявка</h4>
+                    <p>Оставляете заявку на сайте или в мессенджере</p>
+                </div>
+                <div class="step">
+                    <span class="step__number">2</span>
+                    <h4>Расчёт</h4>
+                    <p>Мы подбираем варианты под ваш бюджет</p>
+                </div>
+                <div class="step">
+                    <span class="step__number">3</span>
+                    <h4>Оплата</h4>
+                    <p>Вносите предоплату 30% — остальное за 2 недели</p>
+                </div>
+                <div class="step">
+                    <span class="step__number">4</span>
+                    <h4>Путешествие</h4>
+                    <p>Получаете документы и отправляетесь</p>
+                </div>
+            </div>
+            <div class="conditions__badges">
+                <span class="badge badge--success">✔ рассрочка 0%</span>
+                <span class="badge badge--warning">⏳ горящие туры</span>
+                <span class="badge badge--danger">🔥 early booking</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ФОРМА ПОДБОРА ТУРА (секция 6) -->
+    <section id="form" class="form-section section">
+        <div class="container">
+            <h2 class="section-title">Заполните форму — подберём тур за 30 минут</h2>
+            <form class="form">
+                <div class="form__group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" placeholder="абоба" class="form__input">
+                </div>
+                <div class="form__group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" placeholder="+7 (999) 123-45-67" class="form__input">
+                </div>
+                <div class="form__group">
+                    <label for="destination">Куда хотите</label>
+                    <select id="destination" class="form__input">
+                        <option>Мальдивы</option>
+                        <option>Алтай</option>
+                        <option>Япония</option>
+                        <option>Турция</option>
+                        <option>Другое</option>
+                    </select>
+                </div>
+                <div class="form__group form__group--checkbox">
+                    <input type="checkbox" id="agree" checked>
+                    <label for="agree">Согласен на обработку данных</label>
+                </div>
+                <button type="submit" class="btn btn--primary btn--large">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ФУТЕР (секция 7) -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <span class="footer__logo">🌴 счастливого_Путешествия</span>
+                <p>Лицензия туроператора № РТО 023456</p>
+            </div>
+            <div class="footer__col">
+                <h4>Контакты</h4>
+                <ul>
+                    <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+                    <li><a href="mailto:счастливого_Путешествия@mail.ru">счастливого_Путешествия@mail.ru</a></li>
+                    <li>Москва, ул. Арбат, 10</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Соцсети</h4>
+                <ul>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">VK</a></li>
+                    <li><a href="#">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">© 2025 счастливого_Путешествия — туры мечты</div>
+        </div>
+    </footer>
+</body>
+</html>
